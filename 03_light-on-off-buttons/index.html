@@ -4,6 +4,27 @@
   <meta charset="UTF-8">
   <title>03 - light on/off buttons</title>
   <link href='style.css' rel='stylesheet'>
+  <script>
+    document.addEventListener('DOMContentLoaded', function(){
+      document.getElementById('on').addEventListener('click', function(){
+        document.body.classList.add('light')
+        document.querySelector('.status span').textContent = '開'
+
+        const statusDiv = document.querySelector('.status')
+        statusDiv.classList.remove('off')
+        statusDiv.classList.remove('on')
+      })
+
+      document.getElementById('off').addEventListener('click', function(){
+        document.body.classList.remove('light')
+        document.querySelector('.status span').textContent = '關'
+
+        const statusDiv = document.querySelector('.status')
+        statusDiv.classList.remove('on')
+        statusDiv.classList.remove('off')
+      })
+    })
+  </script>
 </head>
 <body>
   <button id='on'>打開</button>
