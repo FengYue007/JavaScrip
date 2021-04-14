@@ -7,6 +7,10 @@ window.addEventListener('DOMContentLoaded', function() {
     timeDiv.textContent = (new Date()).toString()
     document.querySelector('.right').appendChild(timeDiv)
   })
+
+  document.getElementById('reset-inner-html').addEventListener('click', function() 
+  {
+    document.querySelector('.right').innerHTML = '<div class="title">DOM practice...</div>'
+  })
 })
 
-    debugger
