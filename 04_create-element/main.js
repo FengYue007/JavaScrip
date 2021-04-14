@@ -22,7 +22,13 @@ window.addEventListener('DOMContentLoaded', function() {
     if (lastTimeDiv) {
       lastTimeDiv.remove()
     }
-
   })
+
+  document.getElementById('create-element-insert-adjacent').addEventListener('click', function() {
+    const timeDiv = document.createElement('div');
+    timeDiv.className = 'time';
+    timeDiv.textContent = (new Date()).toString();
+
+    document.querySelector('.title').insertAdjacentElement('afterend', timeDiv);
 })
 
