@@ -39,6 +39,13 @@
       document.getElementById('toggle').addEventListener('click', function() {
         console.log('clicked')
         document.body.classList.toggle('light')
+
+        console.log(this.textContent)
+        if (this.textContent === '開') {
+          this.textContent = '關'
+        } else {
+          this.textContent = '開'
+        }
       })
     })
 
