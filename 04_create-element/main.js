@@ -30,5 +30,6 @@ window.addEventListener('DOMContentLoaded', function() {
     timeDiv.textContent = (new Date()).toString();
 
     document.querySelector('.title').insertAdjacentElement('afterend', timeDiv);
+  })
 })
 
