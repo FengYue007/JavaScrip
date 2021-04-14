@@ -5,6 +5,7 @@ $(document).ready(function() {
       if (timer) {
         clearInterval(timer)
         time = null;
+        
         $('button').text('Start')
         $('#running').slideUp()
       } else {
