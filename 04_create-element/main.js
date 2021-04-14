@@ -10,7 +10,19 @@ window.addEventListener('DOMContentLoaded', function() {
 
   document.getElementById('reset-inner-html').addEventListener('click', function() 
   {
+    // const input = prompt()
+    // document.querySelector('.right').innerHTML = (
+    //   '<div class="title">' + input + 'DOM practice...</div>'
+    //   )
     document.querySelector('.right').innerHTML = '<div class="title">DOM practice...</div>'
+  })
+
+  document.getElementById('remove').addEventListener('click', function() {
+    const lastTimeDiv = document.querySelector('.time:last-child')
+    if (lastTimeDiv) {
+      lastTimeDiv.remove()
+    }
+
   })
 })
 
